@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "ruta": "Ruta 1",
+        "fecha":"2024/08/20",
+        "origen": "Valera", 
+        "destino": "Caracas", 
+        "precio": 20,
+        "h_salida":"8:30 am",
+        "h_llegada":"4:45 pm",
+        "duracion": "8 horas",
+        "n_bus": 1,
+        "capacidad":50
+    },
+    {
+        "id":2,
+        "ruta": "Ruta 2",
+        "fecha":"2024/08/18",
+        "origen": "Caracas", 
+        "destino": "Merida", 
+        "precio": 40,
+        "h_salida":"7:30 am",
+        "h_llegada":"5:45 pm",
+        "duracion": "10:15 horas",
+        "n_bus": 4,
+        "capacidad":40
+    },
+    {
+        "id":3,
+        "ruta": "Ruta 3",
+        "fecha":"2024/08/18",
+        "origen": "Caracas", 
+        "destino": "Valencia", 
+        "precio": 15,
+        "h_salida":"7:30 am",
+        "h_llegada":"5:45 pm",
+        "duracion": "10:15 horas",
+        "n_bus": 2,
+        "capacidad":30
+    },
+    {
+        "id":4,
+        "ruta": "Ruta 4",
+        "fecha":"2024/08/18",
+        "origen": "Valera", 
+        "destino": "Merida", 
+        "precio": 20,
+        "h_salida":"7:00 am",
+        "h_llegada":"12:00 pm",
+        "duracion": "5 horas",
+        "n_bus": 5,
+        "capacidad":40
+    },
+    {
+        "id":5,
+        "ruta": "Ruta 5",
+        "fecha":"2024/08/18",
+        "origen": "Valencia", 
+        "destino": "Merida", 
+        "precio": 25,
+        "h_salida":"7:30 am",
+        "h_llegada":"3:30 pm",
+        "duracion": "8:00 horas",
+        "n_bus": 3,
+        "capacidad":45
+    }
+]

@@ -1,0 +1,118 @@
+/*colores*/
+:root{
+    --morado: rgb(91, 0, 220);
+    --blanco: #fff
+}
+/*  contenedor*/
+.content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+/* textos de bienvenida*/
+.welcome_title{
+    font-size: 8rem;
+    font-weight: bold;
+    color: var(--blanco);
+    transition: .5s font-size;
+    z-index: 1;
+}
+p{
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--blanco);
+    transition: .5s font-size;
+}
+/* boton rutas*/
+.rutas{
+    z-index: 1;
+    border-radius: 15px;
+    border: 3px solid transparent;
+    font-size: calc(3rem - 20px);
+    font-weight: bold;
+    background-color: var(--morado);
+    color: var(--blanco);
+    padding: 0 10px;
+    transition: .4s all;
+    &:hover{
+        border: 3px solid var(--blanco);
+        background-color: transparent;
+    }
+}
+/* estilos de imagen*/
+.img_backgorund{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;  
+    height: 75vh;
+    overflow: hidden;
+}
+.img_bus{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*boton retroceder*/
+.SpaceBtn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 15px 25px 0 0;
+}
+.back{
+    background-color: var(--morado);
+    padding: 7px 15px;
+    font-size: 1rem;
+    color: var(--blanco);
+    border-radius: 10px;
+    transition: .4s background-color;
+    &:hover{
+        background-color: rgb(106, 90, 205);
+    }
+    &:hover > .arrow{
+        animation:  .2s infinite linear arrow;
+    }
+}
+.arrow{
+    margin-right: 10px; 
+}
+@keyframes arrow{
+    0%{transform: rotate(25deg);}
+    50%{transform: rotate(-25deg);}
+    100%{transform: rotate(25deg);}
+}
+
+/* responsividad*/
+@media screen and (max-width: 870px) {
+    .welcome_title{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 470px) {
+    .welcome_title{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .rutas{
+        border: 1.5px solid transparent;
+        font-size: 1.2rem;
+        padding: 0 10px;
+        &:hover{
+            border: 1.5px solid var(--blanco);
+            background-color: transparent;
+        }
+    }
+}
