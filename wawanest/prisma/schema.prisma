@@ -1,0 +1,21 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model route {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  ruta        String
+  origen      String
+  destino     String
+  duracion    String
+  h_salida    String
+  h_llegada   String
+  fecha       String
+  n_bus       Int
+  capacidad   Int
+}
